@@ -24,13 +24,13 @@
     <!--navbar-->
     <ul class="nav nav-tabs bg-secondary">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#main">Resumen</a>
+        <a class="nav-link active" aria-current="page" href="#Resumen">Resumen</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Estudio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Experiencia</a>
+        <a class="nav-link" href="#Experiencia">Experiencia</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" aria-disabled="true">Portafolio</a>
@@ -38,7 +38,7 @@
     </ul>
     <!--Main-->
     <main>
-      <div class="container text-center">
+      <div id="Resumen" class="container text-center">
         <div class="row">
           <div class="col-sm-5">
             <figure class="p-4">
@@ -78,33 +78,113 @@
           </div>
         </div>
       </div>
+      <hr />
 
       <!--Seccion Estudios-->
+      <h2 class="text-center text-light p-4">Estudio Realizados</h2>
       <section class="Estudios">
-        <div class="container text-center">
+        <div class="container">
           <div class="row">
-            <div class="col">
-              Column
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./assets/imgs/unexpo.jpg"
+                  class="card-img-top"
+                  alt="UNEXPO"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Ingeniero Mecánico Industrial - UNEXPO<br>2018
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              Column
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./assets/imgs/La_Salle.jpeg"
+                  class="card-img-top"
+                  alt="La Salle"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Técnico medio en Maquinas y Herramientas - ETI Fundación La Salle 2010
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              Column
+            <div class="col-4">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./assets/imgs/desafiolatam.jpg"
+                  class="card-img-top"
+                  alt="Desafio latam"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Desarrolador Full stackJavascript - Desafio Latam<br>2024
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Seccion Experiencia-->
+      <h2 id="Experiencia" class="text-center text-light p-4">Experiencia Laboral</h2>
+      <section class="Experiencia">
+        
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                J&L Builder Spa | Ingeniero de procesos
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                ●	Monitorear las actividades de trabajo con el fin de cumplir los objetivos planteados.<br>
+                ●	Sostener comunicación constante con las distintas áreas de manera oportuna.<br>
+                ●	Elaborar informes sobre los avances realizados semanalmente.<br>
+                ●	Asistir a reuniones de planificación semanal.<br>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                NewChef SPA | Supervisor de Producción
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                ●	Desarrollar planes de producción semanal.<br>
+                ●	Liderar equipo de trabajo de 20 personas.<br>
+                ●	Realizar inducciones a los operarios en las distintas maquinarias ( Inyectadoras, Tumbler, Desmechadoras, Laminadora, Tecles, Entre otros).<br>
+                ●	Realizar inventarios mensuales para ajustar posibles desviaciones.<br>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Servicios de Ventas y Montajes, CA (SERVEMO) | Supervisor de Producción
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                ●	Realizar lecturas de planos.<br>
+                ●	Modificar y elaborar planos con AutoCAD 2016.<br>
+                ●	Establecer las tareas diarias o semanales de los operarios.<br>
+                ●	Realizar inventarios mensuales.<br>
+              </div>
             </div>
           </div>
         </div>
 
 
-
-
-
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
       </section>
     </main>
 
